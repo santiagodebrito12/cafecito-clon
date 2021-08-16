@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import Explorar from './components/Explorar/Explorar';
+import Header from './components/Header/Header';
+import Main from './components/main/Main';
+import Auth from './components/auth/Auth';
+import Footer from './components/Footer/Footer';
+import UserDetailContainer from './components/UserDetailContainer/UserDetailContainer';
+import UsuarioState from './Context/UsuarioState';
 
-function App() {
+function Cafecito() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UsuarioState>
+      <Router>
+       <Header/>
+      
+    <Switch>
+        <Route component={Main} exact path="/"/>
+        <Route component={Explorar} exact path="/explore"/>
+        <Route component={Auth} exact path="/auth"/>
+        <Route component={UserDetailContainer} exact path="/" />
+
+
+      </Switch>
+      <Footer/>
+    </Router>
+    </UsuarioState>
   );
 }
 
-export default App;
+export default Cafecito;

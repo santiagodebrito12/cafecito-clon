@@ -1,0 +1,31 @@
+.contenedor-seccion{
+    margin: 100px auto;
+    width: 100%;
+    
+}
+.contenedor-explicacion{
+    width: 60%;
+    
+}
+.titulo-seccion{
+    font-weight: bold;
+    color:#7c64bf;
+}
+.imagen-seccion{
+    width: 550px;
+}
+.contenedor-parrafos{
+    height: 400px;
+    margin:auto 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contenedor-parrafos h3{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.contenedor-parrafos p{
+    font-size: 20px;
+}

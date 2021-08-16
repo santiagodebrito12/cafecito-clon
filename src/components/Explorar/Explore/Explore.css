@@ -1,0 +1,38 @@
+.contenedor-explore{
+        margin-top: 150px;
+}
+
+.titulo{
+    font-size: 14px;
+}
+.contenedor-usuarios ul{
+    list-style: none;
+}
+.card-usuario{
+    width: calc(25% - 20px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 250px;
+}
+.contendor-img {
+    margin: 5px auto;
+}
+.contenedor-text-card{
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen-usuario{
+    width: 75px;
+    display: block;
+    margin: auto;
+}
+.contenedor-text-card h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.contenedor-text-card h5{
+    font-size: 1rem;
+}

@@ -1,0 +1,32 @@
+.contenedor-header{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20px;
+}
+.titulo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-left: 15px;
+   
+}
+nav ul li{
+    margin: 5px 20px;
+}
+.links{
+    font-size: 1.2rem;
+    
+    font-weight: bold;
+    text-decoration: none;
+}
+.explorar{
+    color: var(--textBlack);
+}
+.ingresar{
+    background-color: #8fa2cc;
+    color: white;
+    padding: 5px 10px;
+}

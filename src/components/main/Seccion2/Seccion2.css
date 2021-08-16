@@ -1,0 +1,31 @@
+.contenedor-seccion2{
+    margin: 100px auto;
+}
+
+.contenedor-seccion2 h2{
+    font-weight: bolder;
+    color:#7d93c4;
+    margin: 40px 0;
+}
+.contenedor-comentarios{
+    padding: 20px ;
+}
+.card{
+    -webkit-box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    padding: 20px 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    width: 30%;
+}
+.imagen-usuario{
+    border-radius: 50%;
+}
+.header-text h4{
+    font-size: 15px;
+    font-weight: bolder;
+}

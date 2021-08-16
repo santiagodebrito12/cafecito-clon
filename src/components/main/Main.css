@@ -1,0 +1,7 @@
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+}
+.seccion1-bg{
+    background-color: rgba(198,221,244,.1);
+}

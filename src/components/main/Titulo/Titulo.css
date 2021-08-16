@@ -1,0 +1,10 @@
+.titulo-main{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.parrafo{
+    font-size: 1.2rem;
+    margin: 20px auto;
+    width: 65%;
+    text-align: center;
+}
