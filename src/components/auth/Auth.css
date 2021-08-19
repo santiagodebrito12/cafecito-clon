@@ -1,4 +1,6 @@
-
+.contenedor-auth{
+    margin: 3rem auto 33rem;
+}
 .btn-nuevo-usuario{
     margin: 1rem auto;
     display: block;

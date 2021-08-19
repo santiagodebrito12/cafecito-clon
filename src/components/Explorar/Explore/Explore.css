@@ -2,8 +2,10 @@
         margin-top: 150px;
 }
 
-.titulo{
-    font-size: 14px;
+.titulo-explore{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--textGray);
 }
 .contenedor-usuarios ul{
     list-style: none;

@@ -1,0 +1,15 @@
+
+.contenedor-descripcion{
+    -webkit-box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid hsla(0,0%,86.3%,.3);
+}
+.descripcion{
+    font-size: 18px;
+    font-weight: 700;
+}
+.redes{
+    margin-right: 10px;
+}

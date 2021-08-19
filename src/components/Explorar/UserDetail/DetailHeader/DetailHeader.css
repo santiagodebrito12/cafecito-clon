@@ -1,0 +1,25 @@
+.contenedor-detalles-nombre{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-detalles-nombre h1,.contenedor-detalles-nombre p,.contenedor-detalles-nombre h3{
+        font-weight: 700;
+    
+}
+.contenedor-detalles-nombre h1{
+    font-size: 25px;
+}
+.contenedor-detalles-nombre p{
+    font-size: 18px;
+}
+.contenedor-detalles-nombre h3{
+   font-size: 20px;
+    color: #7c64bf;
+    border-bottom: 2px solid #7c64bf;
+}
+.img-usuario{
+    border-radius: 50%;
+}

@@ -1,32 +1,26 @@
 import React from 'react'
 import Explore from './Explore/Explore';
-import { BrowserRouter as  Switch, Route, Redirect } from 'react-router-dom';
-import Slider from './Slider/Slider';
-import Input from '../main/Input/Input';
+import { BrowserRouter as  Switch, Route } from 'react-router-dom';
+
 import Categorias from './Categorias/Categorias';
+import UserDetail from './UserDetail/UserDetail';
+
 const Explorar = () => {
     return (
-        <div>
+        <>
        
-        <Slider/>
-        
-        <div className="container">
-         <Input
-         mensaje="Buscar"
-         placeholder="Buscar"/>
-
-        </div>
         
         <div className="container">
 
         
         <Switch>
-            <Route path="/explore" component={Explore}/>
-            <Route path="/explore/categorias" component={Categorias}/>
-            <Redirect to="/explore"/>
+            <Route exact path="/explore" component={Explore}/>
+            <Route exact path="/explore/categorias" component={Categorias}/>
+            <Route exact path="/explore/user" component={UserDetail}/>
         </Switch>
-        </div>
-        </div>
+        
+         </div>
+        </>
 
     )
 }

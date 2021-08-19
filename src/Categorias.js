@@ -27,7 +27,7 @@ export const categorias = [
         img:ciencia,
     },
     {
-        categoria:'comics',
+        categoria:'streaming',
         img:comic,
     },
     {
