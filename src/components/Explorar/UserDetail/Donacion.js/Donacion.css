@@ -26,3 +26,29 @@
     font-weight: 700;
     width: 30px;
 }
+.contenedor-form form input,.contenedor-form form textarea{
+    
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    font-size: 16px;
+    padding: 12px 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #000;
+    
+}
+.contenedor-form form button{
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    background-color: #8fa2cc;
+    color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}

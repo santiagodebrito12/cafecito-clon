@@ -15,16 +15,13 @@ const DescripcionDetail = () => {
         
             <div className="col-5 contenedor-descripcion ">
                     <h1 className=" descripcion">Descripcion : </h1>
-                    <p> Naa, mentira. Estás en el lugar y en el momento indicado. Gracias por bancarme en esta y en todas! ❤️ 
-
-
-                    Te quiero un montón. Le caerias bien a mi abuela. Ella salio con su primo.</p>
+                    <p>{userSelect.descripcion}</p>
 
                     <div className="list-redes">
-                    <a href="#" className="redes"><img src={twiter}/></a>
-                    <a href="#" className="redes"><img src={insta}/></a>
-                    <a href="#" className="redes"><img src={facebook}/></a>
-                    <a href="#" className="redes"><img src={youtube}/></a>
+                    <a href="#" className="redes"><img src={twiter} alt="twiter"/></a>
+                    <a href="#" className="redes"><img src={insta} alt="instagram"/></a>
+                    <a href="#" className="redes"><img src={facebook} alt="facebook"/></a>
+                    <a href="#" className="redes"><img src={youtube} alt="youtube"/></a>
                     </div>
 
                     <div className="mt-5">

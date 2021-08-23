@@ -27,7 +27,13 @@ export const UsuarioReducer = (state,action)=>{
                 ...state,
                 userSelect:payload,
             }
-    
+            
+            case 'SET_BUSQUEDA_USUARIO':
+                return{
+                    ...state,
+                    userBusqueda:state.users.filter(usuario=>usuario.nombre === payload)
+                }
+                
         default:
             break;
     }

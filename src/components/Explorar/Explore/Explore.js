@@ -12,9 +12,9 @@ import Input from '../../main/Input/Input';
 
 
 const Explore = () => {
-    const {users,busqueda,buscarCategoria,categoria,selectUser,getUsers} = useContext(usuarioContext)
+    const {users,busqueda,buscarCategoria,categoria,selectUser,getUsers,userBusqueda} = useContext(usuarioContext)
     
- 
+    
 
     const [loading,setLoading]= useState(false);
    
@@ -45,7 +45,6 @@ const Explore = () => {
 
       
 
-    console.log(users);
     return (
       <>
       
@@ -54,8 +53,13 @@ const Explore = () => {
         <div className="container">
          <Input
          mensaje="Buscar"
-         placeholder="Buscar"/>
+         placeholder="Buscar"
+         name='usuario'
+         />
 
+        </div>
+
+        <div>
         </div>
       <div className="mt-5">
            
@@ -65,8 +69,11 @@ const Explore = () => {
         <div className="container mt-5 contenedor-usuarios">
         
         <ul className="d-flex flex-wrap">
+            
             {categoria 
+            
             ?
+            
             busqueda.map((user,i)=>{
                
                 return(
@@ -88,7 +95,9 @@ const Explore = () => {
                     </Link>
                 )
             })
+            
             :
+            
             users.map((user,i)=>{
                 
 

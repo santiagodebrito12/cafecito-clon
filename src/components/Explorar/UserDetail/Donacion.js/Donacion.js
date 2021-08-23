@@ -18,6 +18,15 @@ const Donacion = () => {
                    
                     
                     </div>
+
+                    <div className="contenedor-form mb-4">
+                        <form >
+                        <input type="text" placeholder="Nombre (opcional)" className="w-100"/>
+                        <input type="text" placeholder="Contacto (opcional, campo oculto al publico)"className="w-100"/>
+                        <textarea placeholder="Mensaje (opcional) "className="w-100"></textarea>
+                        <button className="w-50 d-block m-auto">Invitame un cafecito!</button>
+                        </form>
+                    </div>
             </div>
     )
 }

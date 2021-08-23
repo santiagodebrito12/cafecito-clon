@@ -5,10 +5,13 @@ footer{
     bottom: 0vh;
 }
 
-.contenedor-derechos p , .lista-derechos li {
+.contenedor-derechos p , .lista-derechos li a{
     color: #7c64bf;
     font-weight: 700;
+}
+.lista-derechos li a{
     text-decoration: underline;
+
 }
 .lista-redes{
     list-style: none;   

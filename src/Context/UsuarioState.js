@@ -9,6 +9,7 @@ const UsuarioState = (props) => {
         users:[],
         categoria: null,
         busqueda: [],
+        userBusqueda:null,
         userSelect:null,
     }
 
@@ -40,6 +41,13 @@ const UsuarioState = (props) => {
         )
     }
 
+    const busquedaUser = (user) =>{
+        dispatch({
+            type:'SET_BUSQUEDA_USUARIO',
+            payload:user,
+        })
+    }
+
     const selectUser = (user) =>{
         dispatch(
             {
@@ -55,11 +63,13 @@ const UsuarioState = (props) => {
             users:state.users,
             categoria:state.categoria,
             busqueda:state.busqueda,
+            userBusqueda:state.userBusqueda,
             userSelect:state.userSelect,
             getUsers,
             setCategoria,
             buscarCategoria,
             selectUser,
+            busquedaUser,
 
         }}>
                 {props.children}

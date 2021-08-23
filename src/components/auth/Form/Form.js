@@ -40,7 +40,7 @@ const Form = () => {
   };
     
     return (
-        <div className="container m-auto">
+        <div className="container m-auto ">
         <form  className="contenedor-form ">
         
         <input
