@@ -25,6 +25,7 @@ const Form = () => {
     const newUser = {
       nombre:inputValue.nombre,
       categoria:inputValue.categoria,
+      img:inputValue.img,
       donaciones:0,
     };
     order
@@ -58,6 +59,15 @@ const Form = () => {
         placeholder="Ingrese Su Categoria"
         className="w-50 p-1  input"
         name='categoria'
+        onChange={(e)=>{
+          handleChange(e)
+        }}
+        />  
+         <input
+        type='file'
+        placeholder="Ingrese Su Categoria"
+        className="w-50 p-1  input"
+        name='img'
         onChange={(e)=>{
           handleChange(e)
         }}
