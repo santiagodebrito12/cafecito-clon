@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import twiter from '../../assets/twiter.svg';
 import insta from '../../assets/insta.svg'
 
 import './footer.css';
+import usuarioContext from '../../Context/UsuarioContext';
+
 const Footer = () => {
+    
+    const{cargando}= useContext(usuarioContext);
+    
     return (
-        <footer className="w-100  d-flex justify-content-between align-items-center">
-            <div className="contenedor-derechos d-flex">
+        <footer className={cargando && "footer"}>
+            <div className="contenedor-derechos">
                 <p>© 2021 Cafecito.</p>
                 <div>
                     <ul className="lista-derechos">
@@ -17,8 +22,8 @@ const Footer = () => {
             </div>
             <div className="contenedor-redes">
                 <ul className="d-flex lista-redes justify-content-around">
-                    <li><a href="#"><img src={twiter}/></a></li>
-                    <li><a href="#"><img src={insta}/></a></li>
+                    <li><a href="#"><img src={twiter} alt="imagen-twitter"/></a></li>
+                    <li><a href="#"><img src={insta} alt="imagen-insta"/></a></li>
 
                 </ul>
             </div>

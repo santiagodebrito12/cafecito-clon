@@ -1,12 +1,19 @@
-import React,{useReducer} from 'react'
+import React,{useReducer,useState,useEffect} from 'react'
 import usuarioContext from './UsuarioContext';
 import { UsuarioReducer } from './UsuarioReducer';
 
 const UsuarioState = (props) => {
+    const [cargando, setCargando] = useState(true);
     
-   
+    useEffect(() => {
+        setTimeout(() => {
+            setCargando(false)
+        }, 1500);
+    }, [])
+
     const initialState = {
         users:[],
+        categorias:[],
         categoria: null,
         busqueda: [],
         userBusqueda:null,
@@ -23,6 +30,10 @@ const UsuarioState = (props) => {
             }
         )
     }
+    const getCategorias = () =>{
+        
+    }
+
     const setCategoria = (categoria)=>{
         dispatch(
             {
@@ -65,8 +76,10 @@ const UsuarioState = (props) => {
             busqueda:state.busqueda,
             userBusqueda:state.userBusqueda,
             userSelect:state.userSelect,
+            cargando,
             getUsers,
             setCategoria,
+            getCategorias,
             buscarCategoria,
             selectUser,
             busquedaUser,

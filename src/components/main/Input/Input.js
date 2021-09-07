@@ -1,8 +1,9 @@
 import React,{useState,useContext} from 'react'
+import Skeleton from 'react-loading-skeleton';
 import usuarioContext from '../../../Context/UsuarioContext'
 import './Input.css'
 const Input = ({mensaje,placeholder,name}) => {
-    const {busquedaUser} = useContext(usuarioContext);
+    const {busquedaUser,cargando} = useContext(usuarioContext);
 
     const [value, setValue] = useState('')
 
@@ -22,6 +23,19 @@ const Input = ({mensaje,placeholder,name}) => {
         
         busquedaUser(value);
     }
+
+
+    if(cargando){
+        return(
+            <Skeleton className="mt-4 contenedor-input m-auto">
+            <Skeleton className="d-flex m-auto justify-content-around p-3 align-items-center form">
+               
+                <button className="btn  boton-crear" ><Skeleton/></button>
+            </Skeleton>
+            </Skeleton>
+        )
+    }else{
+
     
     return (
         <div className="mt-4 contenedor-input m-auto">
@@ -37,6 +51,7 @@ const Input = ({mensaje,placeholder,name}) => {
         </form>
         </div>
     )
+    }
 }
 
 export default Input;

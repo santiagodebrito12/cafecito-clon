@@ -35,7 +35,12 @@
 .contenedor-text-card h3{
     font-size: 1.2rem;
     font-weight: bolder;
+    text-align: center;
 }
 .contenedor-text-card h5{
     font-size: 1rem;
+    text-align: center;
+}
+.contenedor-text-card p{
+    text-align: center;
 }

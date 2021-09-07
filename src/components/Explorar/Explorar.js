@@ -10,7 +10,7 @@ const Explorar = () => {
         <>
        
         
-        <div className="container">
+        <div className="container mb-5">
 
         
         <Switch>

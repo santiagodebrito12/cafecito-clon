@@ -16,3 +16,8 @@ body{
   background-color: var(--boxBackground);
   font-family: var(--fontPrincipal);
 }
+body, html { 
+  margin:0; 
+  padding:0; 
+  min-height:calc(100vh); 
+} 

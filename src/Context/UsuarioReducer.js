@@ -16,7 +16,14 @@ export const UsuarioReducer = (state,action)=>{
                 ...state,
                 users:payload,
             }
-            case 'SET_BUSQUEDA':
+
+        case 'GET_CATEGORIAS':
+            return{
+                ...state,
+                categorias:state.users.filter(usuario=>usuario.categoria)
+            }
+            
+        case 'SET_BUSQUEDA':
             return{
                 ...state,
                 busqueda:state.users.filter(usuario=>usuario.categoria === payload)
