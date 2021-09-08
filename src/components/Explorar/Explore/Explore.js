@@ -47,8 +47,8 @@ const Explore = () => {
 
       if(loading){
           return(
-            <>
-            <div className="container">
+            <section className="contenedor-explorar">
+            <div className="container container-explorar">
                 <Skeleton/>
             </div>
              <div className="container">
@@ -125,7 +125,7 @@ const Explore = () => {
 
               </ul>
             </div>  
-            </>  
+            </section>  
           )
           }
       
@@ -133,7 +133,7 @@ const Explore = () => {
       else{
     
     return (
-      <>
+      <section>
       
       <Slider/>
         
@@ -216,7 +216,7 @@ const Explore = () => {
         </div>
         </div>
         
-        </>
+        </section>
     )
         }
 }

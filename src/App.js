@@ -7,13 +7,15 @@ import Auth from './components/auth/Auth';
 import Footer from './components/Footer/Footer';
 import UsuarioState from './Context/UsuarioState';
 
+
 function Cafecito() {
   return (
     <UsuarioState>
+      
       <Router>
        <Header/>
       
-    <Switch>
+      <Switch>
         <Route component={Main} exact path="/"/>
         <Route component={Explorar} exact path="/explore"/>
         <Route component={Auth} exact path="/auth"/>
@@ -22,6 +24,7 @@ function Cafecito() {
       </Switch>
       <Footer/>
     </Router>
+   
     </UsuarioState>
   );
 }

@@ -106,7 +106,7 @@ const Seccion2 = () => {
                    
                    {comentarios.map(usuario=>{
                        return(
-                        <li className="card">
+                        <li className="card mt-4">
                         <div className="header-card d-flex justify-content-between align-items-center mt-2">
                             <img src={usuario.img} alt="img-usuario" className="imagen-usuario"/>
                             <div className="header-text w-50">

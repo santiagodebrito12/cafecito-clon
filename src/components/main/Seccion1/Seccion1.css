@@ -1,6 +1,7 @@
 .titulo-seccion{
     font-weight: bold;
     color:#7c64bf;
+    margin-top: 15px;
 }
 .contenedor-seccion{
     margin: 50px auto 0px auto;

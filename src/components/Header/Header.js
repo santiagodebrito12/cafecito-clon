@@ -23,6 +23,7 @@ const Header = () => {
                 (openMenu ?"mt-2 p-2 open" : "mt-2 p-2 close")
             }>
                 <ul>
+                
                 <li className="btn"><Link className="links explorar" to="/explore">Explorar</Link></li>
                 <li className="btn ingresar"><Link className=" links ingresar" to="/auth">Ingresar</Link></li>
 
