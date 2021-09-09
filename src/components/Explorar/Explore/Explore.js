@@ -13,13 +13,19 @@ import Skeleton from 'react-loading-skeleton';
 
 
 const Explore = () => {
-    const {users,busqueda,buscarCategoria,categoria,selectUser,getUsers} = useContext(usuarioContext)
+    const {users,busqueda,buscarCategoria,categoria,selectUser,getUsers,resetCategorias} = useContext(usuarioContext)
     
     
 
     const [loading,setLoading]= useState(true);
-   
+    useEffect(()=>{
+    
+      resetCategorias();
+     
+    },[])
+
     useEffect(() => {
+
         buscarCategoria(categoria)
         
     }, [categoria])
@@ -133,16 +139,17 @@ const Explore = () => {
       else{
     
     return (
+  
       <section>
       
       <Slider/>
         
         <div className="container">
-         <Input
+         {/* <Input
          mensaje="Buscar"
          placeholder="Buscar"
          name='usuario'
-         />
+         /> */}
 
         </div>
 

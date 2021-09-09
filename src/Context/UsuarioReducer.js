@@ -40,7 +40,11 @@ export const UsuarioReducer = (state,action)=>{
                     ...state,
                     userBusqueda:state.users.filter(usuario=>usuario.nombre === payload)
                 }
-                
+            case 'RESET_CATEGORIA':
+                return{
+                    ...state,
+                    categoria:null,
+                } 
         default:
             break;
     }

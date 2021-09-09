@@ -1,3 +1,15 @@
+header,nav{
+    transition: 3s all ease-in-out;
+}
+#ingresar{
+    color: white;
+}
+.burguer{
+    font-size: 20px;
+}
+body.dark .burguer-dark{
+    color: white;
+}
 .contenedor-header{
     padding: 10px 35px;
     height: 80px;

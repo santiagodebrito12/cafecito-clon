@@ -1,12 +1,14 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
+import ThemeContext from '../../Context/ThemeContext/ThemeContext';
+import ThemeIcon from '../ThemeIcon/ThemeIcon';
 
 
 import './Header.css';
 
 const Header = () => {
-    
+    const{setTheme,isDark}= useContext(ThemeContext)
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
@@ -20,12 +22,14 @@ const Header = () => {
             </div>
           
             <nav className={
-                (openMenu ?"mt-2 p-2 open" : "mt-2 p-2 close")
+                (openMenu ?"mt-2 p-1 open " : "mt-2 p-2 close ")
             }>
                 <ul>
-                
+                <li className="btn" onClick={()=>{
+                    setTheme();
+                }}><ThemeIcon/></li>
                 <li className="btn"><Link className="links explorar" to="/explore">Explorar</Link></li>
-                <li className="btn ingresar"><Link className=" links ingresar" to="/auth">Ingresar</Link></li>
+                <li className="btn ingresar"><Link className=" links ingresar" to="/auth" id="ingresar">Ingresar</Link></li>
 
                 </ul>
             </nav>
@@ -36,7 +40,7 @@ const Header = () => {
                     setOpenMenu(true)
                 }
             }}>
-            <i class="fas fa-bars"  ></i>
+            <i className={isDark ? "fas fa-bars burguer burguer-dark" :"fas fa-bars burguer"}  ></i>
             </div>
         </div>
     )

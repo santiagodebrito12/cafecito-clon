@@ -1,0 +1,15 @@
+.theme-icon{
+    color: #4a4a4a;
+    font-size: 20px;
+}
+.theme-icon.active{
+    font-size: 30px;
+}
+.barra-separacion{
+    margin: 0 5px;
+}
+body.dark .theme-icon{
+   color:  rgb(184, 173, 210);
+}
+
+

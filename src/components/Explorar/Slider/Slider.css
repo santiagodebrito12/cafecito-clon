@@ -19,7 +19,7 @@
 }
 .card-categoria p{
     color:#7c64bf;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 700;
     margin-top: 10px;
 }
@@ -27,13 +27,13 @@
     color: #7c64bf;
 
 }
-@media (max-width:470px){
+@media (max-width:540px){
     .card-categoria{
         width: 50%;
     }
 }
 
-@media(min-width:768px){
+@media(min-width:1024px){
 
 .slider{
     margin: 40px auto;
@@ -45,7 +45,12 @@
     width: 12%;
     flex-shrink: 0;
 }
-
+.card-categoria p{
+    color:#7c64bf;
+    font-size: 0.8rem;
+   
+    margin-top: 10px;
+}
 .card-categoria img{
     width: 55px;
 }

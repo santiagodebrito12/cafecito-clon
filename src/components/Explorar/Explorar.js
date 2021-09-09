@@ -17,6 +17,7 @@ const Explorar = () => {
             <Route exact path="/explore" component={Explore}/>
             <Route exact path="/explore/categorias" component={Categorias}/>
             <Route exact path="/explore/user" component={UserDetail}/>
+       
         </Switch>
         
          </div>

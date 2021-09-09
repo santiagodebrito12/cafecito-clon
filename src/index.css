@@ -21,9 +21,16 @@ body, html {
 body{
   background-color: var(--boxBackground);
   font-family: var(--fontPrincipal);
-  
   transition: 3s all ease;
-  
 }
 
+body.dark, body.dark footer,body.dark .slider{
+background-color: rgb(56, 50, 65);
+}
+body.dark .card{
+  background-color: rgb(59, 49, 73);
+}
+body.dark p, body.dark h1, body.dark h2,body.dark h3, body.dark a{
+  color: rgb(184, 173, 210);
+}
 

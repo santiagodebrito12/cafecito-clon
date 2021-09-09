@@ -6,12 +6,13 @@ import Main from './components/main/Main';
 import Auth from './components/auth/Auth';
 import Footer from './components/Footer/Footer';
 import UsuarioState from './Context/UsuarioState';
+import ThemeState from './Context/ThemeContext/ThemeState';
 
 
 function Cafecito() {
   return (
     <UsuarioState>
-      
+      <ThemeState>
       <Router>
        <Header/>
       
@@ -24,7 +25,7 @@ function Cafecito() {
       </Switch>
       <Footer/>
     </Router>
-   
+    </ThemeState>
     </UsuarioState>
   );
 }

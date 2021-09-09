@@ -3,6 +3,7 @@ import Skeleton from 'react-loading-skeleton';
 import usuarioContext from '../../../Context/UsuarioContext'
 import './Input.css'
 const Input = ({mensaje,placeholder,name}) => {
+  
     const {busquedaUser,cargando} = useContext(usuarioContext);
 
     const [value, setValue] = useState('')
@@ -15,11 +16,13 @@ const Input = ({mensaje,placeholder,name}) => {
    
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(value.trim() ===''){
-            console.log('debes ingresar un usuario')
-           return;
+        console.log("desde handle submit")
+        
+        // if(value.trim() ===''){
+        //     console.log('debes ingresar un usuario')
+        //    return;
 
-        }
+        // }
         
         busquedaUser(value);
     }

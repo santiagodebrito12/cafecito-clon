@@ -7,6 +7,8 @@ const Form = () => {
   const [inputValue, setinputValue] = useState({
     nombre:'',
     categoria:'',
+    img:'',
+    
     
   })
 
@@ -25,7 +27,7 @@ const Form = () => {
     const newUser = {
       nombre:inputValue.nombre,
       categoria:inputValue.categoria,
-      img:inputValue.img,
+      imagen:inputValue.img,
       donaciones:0,
     };
     order

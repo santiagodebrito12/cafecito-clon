@@ -31,8 +31,8 @@ const Seccion1 = () => {
     }else{
 
     return (
-        <div className="contenedor-seccion ">
-            <h2 className="text-center titulo-seccion ">¿Cómo funciona Cafecito?</h2>
+        <div className="contenedor-seccion p-2">
+            <h2 className="text-center titulo-seccion mt-3">¿Cómo funciona Cafecito?</h2>
             <div className="contenedor-explicacion w-100 mt-4">
                 <img src={img} alt="imagen-seccion" className="imagen-seccion"/>
                 <div className=" contenedor-parrafos">

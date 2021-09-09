@@ -47,7 +47,7 @@ const Slider = () => {
                             <li className="d-flex">
                                 <i className="far fa-star fa-2x star"></i>
                                 {/* <img src={`Icono ${categoria}`} value={categoria}/> */}
-                                <p className="text-center">{categoria}</p>
+                                <p className="text-center text-uppercase">{categoria}</p>
                             </li>
                             </Link>
 

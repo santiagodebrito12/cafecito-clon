@@ -26,7 +26,35 @@
         
     }
 }
-@media (min-width:768px){
+@media (min-width:700px) and (max-width:1023px){
+  
+    
+    .input-crear{
+        border-radius: 6px;
+        border: 1px solid #c4c4c4;
+        width: 60%;
+        font-size: 16px;
+        padding: 10px 10px 8px 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .boton-crear{
+        background-color: #7c64bf;
+        border-radius: 6px;
+        border: 0;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 40px;
+        justify-content: center;
+        display: block;
+        
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+}
+@media (min-width:1024px){
     .contenedor-input{
         width: 80%;  
     }

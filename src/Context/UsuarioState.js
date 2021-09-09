@@ -30,9 +30,12 @@ const UsuarioState = (props) => {
             }
         )
     }
-    const getCategorias = () =>{
-        
-    }
+    const resetCategorias = () =>{
+            dispatch({
+                type:'RESET_CATEGORIA',
+                
+            })
+    }   
 
     const setCategoria = (categoria)=>{
         dispatch(
@@ -79,7 +82,7 @@ const UsuarioState = (props) => {
             cargando,
             getUsers,
             setCategoria,
-            getCategorias,
+            resetCategorias,
             buscarCategoria,
             selectUser,
             busquedaUser,

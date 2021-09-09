@@ -1,4 +1,7 @@
-
+.contenedor-seccion2 h2{
+   font-weight: bolder;
+   color:#7d93c4;
+}
 .card{
     margin: 10px 0px;
     -webkit-box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
@@ -21,11 +24,16 @@
     font-weight: bolder;
 }
 @media (max-width:400px){
+    .contenedor-seccion2{
+        padding-top: 20px;
+    }
     .contenedor-comentario p{
         font-size: 0.8rem;
     }
 }
 @media (min-width:600px) and (max-width:1023px){
+   
+    
     .card{
         margin: 10px auto;
         -webkit-box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
@@ -50,8 +58,7 @@
     }
     
     .contenedor-seccion2 h2{
-        font-weight: bolder;
-        color:#7d93c4;
+       
         margin: 40px 0;
     }
     .contenedor-comentarios{
