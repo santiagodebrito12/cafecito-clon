@@ -20,15 +20,12 @@
 }
 @media (max-width:321px){
     .boton-crear{
-        
         padding: 10px;
         font-size: 12px;
-        
     }
 }
 @media (min-width:700px) and (max-width:1023px){
-  
-    
+
     .input-crear{
         border-radius: 6px;
         border: 1px solid #c4c4c4;

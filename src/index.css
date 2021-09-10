@@ -30,7 +30,7 @@ background-color: rgb(56, 50, 65);
 body.dark .card{
   background-color: rgb(59, 49, 73);
 }
-body.dark p, body.dark h1, body.dark h2,body.dark h3, body.dark a{
+body.dark p, body.dark h1, body.dark h2,body.dark h3,body.dark h4, body.dark a{
   color: rgb(184, 173, 210);
 }
 

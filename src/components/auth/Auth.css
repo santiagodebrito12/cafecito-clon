@@ -1,7 +1,10 @@
-.contenedor-auth{
+.contenedor-authentificacion {
     margin: 3rem auto 33rem;
 }
 .btn-nuevo-usuario{
     margin: 1rem auto;
     display: block;
+}
+.close-titulo{
+    display: none;
 }

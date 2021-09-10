@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import './Explore.css';
 import usuarioContext from '../../../Context/UsuarioContext';
 import Slider from '../Slider/Slider';
-import Input from '../../main/Input/Input';
 import Skeleton from 'react-loading-skeleton';
 
 
@@ -28,7 +27,7 @@ const Explore = () => {
 
         buscarCategoria(categoria)
         
-    }, [categoria])
+    },[categoria])
 
     useEffect(() => {
         const db = getFirestore();
@@ -49,7 +48,7 @@ const Explore = () => {
             console.log(error);
             setLoading(false);
           });
-      }, []);
+      },[]);
 
       if(loading){
           return(
@@ -57,9 +56,7 @@ const Explore = () => {
             <div className="container container-explorar">
                 <Skeleton/>
             </div>
-             <div className="container">
-             <Skeleton/>
-           </div>
+             
 
             <div className="container mt-5 contenedor-usuarios">
   

@@ -4,6 +4,8 @@ import Skeleton from 'react-loading-skeleton';
 import { Link } from 'react-router-dom';
 import usuarioContext from '../../../Context/UsuarioContext';
 
+import '../Input/Input.css';
+
 const Button = () => {
     const{cargando}=useContext(usuarioContext);
     if(cargando){
@@ -19,7 +21,7 @@ const Button = () => {
     return (
         <div className="container">
             
-            <Link className="link" to="/auth" ><button className="btn  boton-crear m-auto" >Crear Cuenta</button></Link>
+            <Link className="link" to="/auth" ><button className="btn boton-crear m-auto" >Crear Cuenta</button></Link>
         </div>
     )
 }
