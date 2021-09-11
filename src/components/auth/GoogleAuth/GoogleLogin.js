@@ -28,7 +28,7 @@ const GoogleButton = () =>{
     const [userEmail, setuserEmail] = useState({
         email:"",
         password:"",
-        confirmPassword:"",
+       
     })
 
     const [error, setError] = useState(false)
@@ -40,11 +40,11 @@ const GoogleButton = () =>{
             [e.target.name]:e.target.value
         })
     }
-    const{email,password,confirmPassword}=userEmail;
+    const{email,password}=userEmail;
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if( email.trim()==="" || password.trim()==="" || confirmPassword.trim() === "" || password !== confirmPassword ){
+        if( email.trim()==="" || password.trim()==="" ){
             console.log('cambio obligatorio')
             setError(true);
             return;
@@ -99,12 +99,12 @@ const GoogleButton = () =>{
                 name="password"
                 onChange={handleChange}/>
 
-                <input 
+                {/* <input 
                 type="password"
                 placeholder="repetir contraseña"
                 className={error ? "w-75 m-2 input-email input-err" : "w-75 m-2 input-email"}
                 name="confirmPassword"
-                onChange={handleChange}/>
+                onChange={handleChange}/> */}
                 
                 <button className="btn w-50 ingresar" type="submit">Ingresar</button>
             </form>
