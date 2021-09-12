@@ -88,14 +88,14 @@ const GoogleButton = () =>{
                 <input 
                 type="text"
                 placeholder="ingrese su correo electronico"
-                className={error ? "w-75 m-2 input-email input-err" : "w-75 m-2 input-email"}
+                className={error ? " m-2 input-email input-err" : " m-2 input-email"}
                 name="email"
                 onChange={handleChange}/>
 
                 <input 
                 type="password"
                 placeholder="ingrese su contraseña"
-                className={error ? "w-75 m-2 input-email input-err" : "w-75 m-2 input-email"}
+                className={error ? " m-2 input-email input-err" : " m-2 input-email"}
                 name="password"
                 onChange={handleChange}/>
 
@@ -106,7 +106,7 @@ const GoogleButton = () =>{
                 name="confirmPassword"
                 onChange={handleChange}/> */}
                 
-                <button className="btn w-50 ingresar" type="submit">Ingresar</button>
+                <button className="btn ingresar sing-in" type="submit">Ingresar</button>
             </form>
             
         </div>

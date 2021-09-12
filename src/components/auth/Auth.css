@@ -4,6 +4,9 @@
 .btn-nuevo-usuario{
     margin: 1rem auto;
     display: block;
+    background-color: #8fa2cc;
+    color: white;
+    padding: 5px 10px;
 }
 .close-titulo{
     display: none;

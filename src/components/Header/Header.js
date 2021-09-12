@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className="container contenedor-header">
            
-            <div className="d-flex logo p-2">
+            <div className="d-flex logo p-2 mt-1">
                 <Link to="/">
                 <img src={logo} alt="logo"/>
                 </Link>
@@ -29,11 +29,11 @@ const Header = () => {
                     setTheme();
                 }}><ThemeIcon/></li>
                 <li className="btn"><Link className="links explorar" to="/explore">Explorar</Link></li>
-                <li className="btn ingresar"><Link className=" links ingresar" to="/auth" id="ingresar">Ingresar</Link></li>
+                <li className="btn ingresar"><Link className=" links ingresar" to="/auth" id="ingresar-header">Ingresar</Link></li>
 
                 </ul>
             </nav>
-            <div className="contenedor-bars" onClick={()=>{
+            <div className="contenedor-bars " onClick={()=>{
                 if(openMenu){
                     setOpenMenu(false)
                 }else{

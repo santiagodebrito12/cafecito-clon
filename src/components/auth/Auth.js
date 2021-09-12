@@ -2,6 +2,7 @@ import React,{useState,useContext} from 'react'
 import Form from './Form/Form';
 import GoogleAuth from './GoogleAuth/GoogleLogin';
 import './Auth.css';
+
 import usuarioContext from '../../Context/UsuarioContext';
 
 const Auth = () => {
