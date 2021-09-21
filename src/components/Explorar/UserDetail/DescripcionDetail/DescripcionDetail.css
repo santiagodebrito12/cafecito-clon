@@ -5,6 +5,7 @@
     border-radius: 10px;
     padding: 16px;
     border: 1px solid hsla(0,0%,86.3%,.3);
+    margin-top: 25px;
 }
 .descripcion{
     font-size: 18px;
@@ -12,4 +13,11 @@
 }
 .redes{
     margin-right: 10px;
+}
+
+@media(min-width:768px){
+    .contenedor-descripcion{
+        width: 45%;
+        margin-right: 15px;
+    }
 }

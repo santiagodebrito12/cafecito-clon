@@ -1,7 +1,7 @@
 import React,{useContext,useState} from 'react'
 import { Redirect } from 'react-router';
 import usuarioContext from '../../../Context/UsuarioContext';
-import Main from '../../main/Main';
+import validator from 'validator';
 
 import './GoogleLogin.css';
 const GoogleLogin = () => {
@@ -13,7 +13,7 @@ const GoogleLogin = () => {
            <GoogleButton/>
        )
       }else{
-       
+        
         return(
            <Redirect to="/"/>
         )
@@ -23,7 +23,7 @@ const GoogleLogin = () => {
 }
 
 const GoogleButton = () =>{
-    const {googleAuth,FacebookAuth,setActiveUser}=useContext(usuarioContext);
+    const {googleAuth,setActiveUser}=useContext(usuarioContext);
     
     const [userEmail, setuserEmail] = useState({
         email:"",
@@ -40,11 +40,12 @@ const GoogleButton = () =>{
             [e.target.name]:e.target.value
         })
     }
+    
     const{email,password}=userEmail;
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if( email.trim()==="" || password.trim()==="" ){
+        if( !validator.isEmail(email) || password.trim()==="" ){
             console.log('cambio obligatorio')
             setError(true);
             return;
@@ -106,7 +107,7 @@ const GoogleButton = () =>{
                 name="confirmPassword"
                 onChange={handleChange}/> */}
                 
-                <button className="btn ingresar sing-in" type="submit">Ingresar</button>
+                <button className="btn  sign-in" type="submit">Ingresar</button>
             </form>
             
         </div>

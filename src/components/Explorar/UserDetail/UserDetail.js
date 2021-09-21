@@ -14,7 +14,7 @@ const UserDetail = () => {
                 
                 <DetailHeader/>
 
-                <div className="row m-auto d-flex justify-content-between mt-5">
+                 <div className="row  contenedor-info">
                    
                     <DescripcionDetail/>
 

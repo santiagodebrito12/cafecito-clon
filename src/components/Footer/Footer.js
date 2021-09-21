@@ -10,7 +10,7 @@ const Footer = () => {
     const{cargando}= useContext(usuarioContext);
     
     return (
-        <footer className={cargando && "footer"}>
+        <footer className={(cargando) && "footer"}>
             <div className="contenedor-derechos">
                 <p>© 2021 Cafecito.</p>
                 <div>

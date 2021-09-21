@@ -27,7 +27,7 @@ const Form = () => {
     const newUser = {
       nombre:inputValue.nombre,
       categoria:inputValue.categoria,
-      imagen:inputValue.img,
+      img:inputValue.img,
       donaciones:0,
     };
     order
@@ -49,7 +49,7 @@ const Form = () => {
         <input
         type='text'
         placeholder="Ingrese Su nombre Completo"
-        className="w-50 p-1  input"
+        className=" p-1 input"
         name="nombre"
         onChange={(e)=>{
           handleChange(e)
@@ -59,7 +59,7 @@ const Form = () => {
          <input
         type='text'
         placeholder="Ingrese Su Categoria"
-        className="w-50 p-1  input"
+        className=" p-1  input"
         name='categoria'
         onChange={(e)=>{
           handleChange(e)
@@ -68,7 +68,7 @@ const Form = () => {
          <input
         type='file'
         placeholder="Ingrese Su Categoria"
-        className="w-50 p-1  input"
+        className=" p-1  input"
         name='img'
         onChange={(e)=>{
           handleChange(e)
@@ -76,7 +76,7 @@ const Form = () => {
         />  
      
          
-        <button className="btn ingresar d-block w-25" onClick={(e)=>{
+        <button className="btn sign-in" onClick={(e)=>{
             e.preventDefault();
             saveUser();
         }}>Regristate</button>

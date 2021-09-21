@@ -32,7 +32,11 @@
         width: 50%;
     }
 }
-
+@media (max-width:1024px){
+    .slider{
+        margin-top: 20px;
+    }
+}
 @media(min-width:1024px){
 
 .slider{

@@ -170,8 +170,8 @@ const Explore = () => {
                 return(
                     <Link className="card card-usuario" onClick={()=>{
                         selectUser(user)
-                    }} to="/explore/user" >
-                    <li key={i}>
+                    }} to="/explore/user"  key={i} >
+                    <li>
                     <div className="contendor-img">
                         <img src={user.img} alt="imagen-usuario" className="imagen-usuario"/>
                     </div>

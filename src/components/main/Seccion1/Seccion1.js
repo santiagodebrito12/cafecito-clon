@@ -13,7 +13,7 @@ const Seccion1 = () => {
         return(
             <div className="contenedor-seccion ">
             <h2 className="text-center titulo-seccion"><Skeleton/></h2>
-            <div className="contenedor-explicacion w-100 mt-4">
+            <div className="contenedor-explicacion w-100 mt-5">
                 {/* <img src={<Skeleton/>} alt="imagen-seccion" className="imagen-seccion"/> */}
                 <div className=" contenedor-parrafos">
                     <div>

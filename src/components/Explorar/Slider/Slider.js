@@ -37,11 +37,11 @@ const Slider = () => {
             <div className="slider">
                 { <ul className=" lista-categorias flex-wrap">
                     
-                    {arr.map(categoria=>{
+                    {arr.map((categoria,i)=>{
                         
     
                         return(
-                            <Link className="link card-categoria" value={categoria}  onClick={()=>{
+                            <Link className="link card-categoria" value={categoria} key={i}  onClick={()=>{
                                 setCategoria(categoria)
                             }}>
                             <li className="d-flex">

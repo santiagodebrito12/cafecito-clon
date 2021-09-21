@@ -83,11 +83,11 @@ body.dark .burguer-dark{
     .contenedor-bars{
         cursor: pointer;
     }
-    nav .open #ingresar-header{
+    nav.open #ingresar-header{
         color: var(--textGray);
         
     }
-    body.dark #ingresar{
+    body.dark nav.open #ingresar-header{
         color: rgb(184, 173, 210);
     }
 }

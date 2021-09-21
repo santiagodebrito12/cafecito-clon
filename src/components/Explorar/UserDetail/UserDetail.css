@@ -1,4 +1,13 @@
 .contenedor-perfil{
     margin: 100px auto;
+   
  
+}
+ 
+@media(min-width:768px){
+    .contenedor-info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
 }

@@ -25,7 +25,7 @@ const Header = () => {
                 (openMenu ?"mt-2 p-1 open " : "mt-2 p-2 close ")
             }>
                 <ul>
-                <li className="btn" onClick={()=>{
+                <li className="btn mt-2" onClick={()=>{
                     setTheme();
                 }}><ThemeIcon/></li>
                 <li className="btn"><Link className="links explorar" to="/explore">Explorar</Link></li>

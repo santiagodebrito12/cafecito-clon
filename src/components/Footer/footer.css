@@ -13,7 +13,7 @@ footer{
     display: flex;
 }
 .contenedor-derechos p , .lista-derechos li a{
-    color: #7c64bf;
+    color: rgb(184, 173, 210);
     font-weight: 700;
     text-decoration: none;
 }
@@ -28,7 +28,7 @@ footer{
 
 @media (max-width:425px){
     .contenedor-derechos p , .lista-derechos li a{
-        color: #7c64bf;
+        color: rgb(184, 173, 210);
         font-weight: 700;
         font-size: 15px;
     }

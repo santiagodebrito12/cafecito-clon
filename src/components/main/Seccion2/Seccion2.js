@@ -98,15 +98,15 @@ const Seccion2 = () => {
     
 
     return (
-        <div className="  contenedor-seccion2">
+        <div className="  contenedor-seccion2 ">
             <h2 className="text-center">¿Que dicen de Cafecito?</h2>
          
             <div className="contenedor-comentarios">
                 <ul >
                    
-                   {comentarios.map(usuario=>{
+                   {comentarios.map((usuario,i)=>{
                        return(
-                        <li className="card mt-4">
+                        <li className="card mt-4" key={i}>
                         <div className="header-card d-flex justify-content-between align-items-center mt-2">
                             <img src={usuario.img} alt="img-usuario" className="imagen-usuario"/>
                             <div className="header-text w-50">

@@ -13,7 +13,7 @@ const DescripcionDetail = () => {
     
     return (
         
-            <div className="col-5 contenedor-descripcion ">
+            <div className="contenedor-descripcion ">
                     <h1 className=" descripcion">Descripcion : </h1>
                     <p>{userSelect.descripcion}</p>
 

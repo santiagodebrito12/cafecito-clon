@@ -64,11 +64,20 @@
 .input-err{
     border: 2px solid red;
 }
-/* .ingresar{
-    background-color: #8fa2cc;
-    color: white;
-} */
 
+body.dark .ingresar{
+    color: white;
+}
+.sign-in{
+    background-color: #7c64bf;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    justify-content: center;
+    display: block;
+    font-weight: 400;
+}
 
 .btn-google{
     background-color: #7c64bf;
@@ -118,9 +127,9 @@
 }
 
 
-@media (min-width:850px){
+@media (min-width:768px){
     .redes-btn{
-        width: 30%;
+        width: 40%;
     }
     .icono{
         font-size: 25px;
@@ -138,6 +147,17 @@
         font-size: 16px;
         font-family: var(--headingFont2);
         letter-spacing: 0.3px;   
+    }
+    .sign-in{
+        background-color: #7c64bf;
+        padding: 8px 25px;
+        border-radius: 6px;
+        border: 0;
+        color: #fff;
+        font-size: 16px;
+        justify-content: center;
+        display: block;
+        font-weight: 400;
     }
     
 }

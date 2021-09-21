@@ -29,7 +29,7 @@ const Main = () => {
                 <Seccion1/>
             </div>
         </div>
-        <div className="container">
+        <div className="container mt-2">
             <Seccion2/>
         </div>
 
